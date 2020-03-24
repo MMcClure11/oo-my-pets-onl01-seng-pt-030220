@@ -21,4 +21,9 @@ class Dog
    @mood = "happy"
  end
   
+  dog sell
+    @mood = "nervous"
+    self.owner = nil
+  end
+  
 end
