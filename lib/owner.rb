@@ -1,6 +1,6 @@
 class Owner
   
-  attr_reader :name, :cats, :dogs
+  attr_reader :name
   
   @@all = []
   
@@ -8,7 +8,6 @@ class Owner
     @name = name
     @@all << self
     @cats = []
-    @dogs = []
   end
 
   def species
@@ -31,39 +30,12 @@ class Owner
     @@all = []
   end
 
-  def add_cat(cat)
-    @cats << cat
-  end
+  def cats
+    @cats
+  end  
 
-  def add_dog(dog)
-    @dogs << dog
-  end
-
-  def buy_cat(name)
+  def add_cat(name)
     Cat.new(name, self)
-  end
-  
-  def buy_dog(name)
-    Dog.new(name, self)
-  end
-
-  def walk_dogs
-    dogs.each(&:walk)
-  end
-  
-  def feed_cats
-    cats.each(&:feed)
-  end
-
-  def sell_pets
-    cats.each(&:sell)
-      @cats = []
-    dogs.each(&:sell)
-      @dogs = []
-  end
-
-  def list_pets
-    "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
   end
 
 end

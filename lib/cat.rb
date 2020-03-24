@@ -17,13 +17,4 @@ class Cat
     @@all
   end
   
-  def feed
-    @mood = "happy"
-  end
-  
-  def sell
-    @mood = "nervous"
-    self.owner = nil
-  end
-  
 end
