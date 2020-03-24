@@ -1,6 +1,6 @@
 class Owner
   
-  attr_reader :name
+  attr_reader :name, :cats
   
   @@all = []
   
@@ -29,10 +29,6 @@ class Owner
   def self.reset_all
     @@all = []
   end
-
-  def cats
-    @cats
-  end  
 
   def add_cat(cat)
    @cats << cat
