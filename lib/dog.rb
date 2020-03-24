@@ -17,6 +17,8 @@ class Dog
     @@all
   end
   
- 
+ def walk
+   @mood = "happy"
+ end
   
 end
