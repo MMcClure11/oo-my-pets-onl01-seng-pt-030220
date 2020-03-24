@@ -51,4 +51,8 @@ class Owner
     dogs.each(&:walk)
   end
   
+  def feed_cats
+    cats.each(&:feed)
+  end
+  
 end
