@@ -59,9 +59,8 @@ class Owner
     cats.each(&:sell) 
       @cats = []
     dogs.each do |dog|
-      dog.mood = "nervous"
+      dog.sell
       @dogs = []
-      dog.owner = nil
     end
   end
   
