@@ -34,8 +34,8 @@ class Owner
     @cats
   end  
 
-  def add_cat(name)
-    Cat.new(name, self)
+  def add_cat(cat)
+   @cats << cat
   end
 
 end
