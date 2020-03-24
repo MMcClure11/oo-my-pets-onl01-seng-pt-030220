@@ -57,9 +57,9 @@ class Owner
   
   def sell_pets
     cats.each(&:sell) 
-      @cats = []
+      # @cats = []
     dogs.each(&:sell)
-      @dogs = []
+      # @dogs = []
   end
   
   def list_pets
